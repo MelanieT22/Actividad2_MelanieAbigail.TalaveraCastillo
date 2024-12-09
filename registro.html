@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Usuarios</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="funcionalidades.html">Funcionalidades Lógicas</a></li>
+            <li><a href="registro.html">Registro de Usuarios</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="userForm">
+            <label for="id">ID:</label>
+            <input type="number" id="id" required>
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" required>
+            <label for="name">Nombres y Apellidos:</label>
+            <input type="text" id="name" required>
+            <label for="birthDate">Fecha de Nacimiento:</label>
+            <input type="date" id="birthDate" required>
+            <label for="city">Ciudad de Procedencia:</label>
+            <select id="city">
+                <option value="Quito">Quito</option>
+                <option value="Guayaquil">Guayaquil</option>
+                <option value="Cuenca">Cuenca</option>
+                <option value="Ambato">Ambato</option>
+                <option value="Manta">Manta</option>
+                <option value="Ibarra">Ibarra</option>
+                <option value="Loja">Loja</option>
+                <option value="Machala">Machala</option>
+                <option value="Portoviejo">Portoviejo</option>
+                <option value="Santo Domingo">Santo Domingo</option>
+            </select>
+            <button type="submit">Registrar</button>
+        </form>
+        <div id="userTable"></div>
+    </main>
+    <script src="js/registro.js"></script>
+    <footer>
+        <h3>© 2024 Melanie Talavera. Todos los derechos reservados.</h3>
+        <h3>Contacto de la estudiante: <a href="mailto:matalavera@espe.edu.ec">matalavera@espe.edu.ec</a></h3>
+    </footer>
+</body>
+</html>
